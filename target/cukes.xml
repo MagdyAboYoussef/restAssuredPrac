@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="12.973" tests="17" skipped="0" failures="9" errors="0">
+<testcase classname="Booking API" name="F01 | Create and retrieve a booking - Example #1.1" time="4.485">
+<system-out><![CDATA[
+Given I create a booking with first name "John", last name "Doe", total price "100", deposit paid "true", check-in "2020-01-01", check-out "2020-01-02", "Breakfast" successfully.passed
+And I should be able to retrieve the booking by ID..........................passed
+Then the retrieved booking should have first name "John", last name "Doe", total price "100", deposit paid "true", check-in "2020-01-01", check-out "2020-01-02","Breakfast".passed
+]]></system-out>
+</testcase>
+<testcase classname="Booking API" name="F01 | Create and retrieve a booking - Example #1.2" time="0.838">
+<system-out><![CDATA[
+Given I create a booking with first name "Jane", last name "Smith", total price "200", deposit paid "true", check-in "2020-02-01", check-out "2020-02-02", "Burger" successfully.passed
+And I should be able to retrieve the booking by ID..........................passed
+Then the retrieved booking should have first name "Jane", last name "Smith", total price "200", deposit paid "true", check-in "2020-02-01", check-out "2020-02-02","Burger".passed
+]]></system-out>
+</testcase>
+<testcase classname="Booking API with invalid info" name="F02| Try to create a booking with invalid info and retrieve a booking - Example #1.1" time="0.364">
+<failure type="java.lang.AssertionError" message="expected [404] but found [200]">
+<![CDATA[java.lang.AssertionError: expected [404] but found [200]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1418)
+	at org.testng.Assert.assertEquals(Assert.java:1448)
+	at stepDef.D02_invalidInfo.status_code_should_be_for_all_invalid_entries(D02_invalidInfo.java:21)
+	at ?.status code should be 404 for all invalid entries(file:///F:/APIpractice/rest/src/main/resources/features/F02_InvalidInfo.feature:6)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I create a booking with invalid info of "John", last name "Doe", total price "-100", deposit paid "true", check-in "2020-01-01", check-out "2020-01-02", "Breakfast" successfully.passed
+Then status code should be 404 for all invalid entries......................failed
+]]></system-out>
+</testcase>
+<testcase classname="Booking API with invalid info" name="F02| Try to create a booking with invalid info and retrieve a booking - Example #1.2" time="0.326">
+<failure type="java.lang.AssertionError" message="expected [404] but found [200]">
+<![CDATA[java.lang.AssertionError: expected [404] but found [200]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1418)
+	at org.testng.Assert.assertEquals(Assert.java:1448)
+	at stepDef.D02_invalidInfo.status_code_should_be_for_all_invalid_entries(D02_invalidInfo.java:21)
+	at ?.status code should be 404 for all invalid entries(file:///F:/APIpractice/rest/src/main/resources/features/F02_InvalidInfo.feature:6)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I create a booking with invalid info of "Jane", last name "Smith", total price "200", deposit paid "false", check-in "2020-02-01", check-out "2020-02-02", "Burger" successfully.passed
+Then status code should be 404 for all invalid entries......................failed
+]]></system-out>
+</testcase>
+<testcase classname="Booking API with invalid info" name="F02| Try to create a booking with invalid info and retrieve a booking - Example #1.3" time="0.319">
+<failure type="java.lang.AssertionError" message="expected [404] but found [200]">
+<![CDATA[java.lang.AssertionError: expected [404] but found [200]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1418)
+	at org.testng.Assert.assertEquals(Assert.java:1448)
+	at stepDef.D02_invalidInfo.status_code_should_be_for_all_invalid_entries(D02_invalidInfo.java:21)
+	at ?.status code should be 404 for all invalid entries(file:///F:/APIpractice/rest/src/main/resources/features/F02_InvalidInfo.feature:6)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I create a booking with invalid info of "Peter", last name "Mal", total price "test", deposit paid "true", check-in "2020-02-01", check-out "2020-02-02", "Burger" successfully.passed
+Then status code should be 404 for all invalid entries......................failed
+]]></system-out>
+</testcase>
+<testcase classname="Booking API with invalid info" name="F02| Try to create a booking with invalid info and retrieve a booking - Example #1.4" time="0.327">
+<failure type="java.lang.AssertionError" message="expected [404] but found [200]">
+<![CDATA[java.lang.AssertionError: expected [404] but found [200]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1418)
+	at org.testng.Assert.assertEquals(Assert.java:1448)
+	at stepDef.D02_invalidInfo.status_code_should_be_for_all_invalid_entries(D02_invalidInfo.java:21)
+	at ?.status code should be 404 for all invalid entries(file:///F:/APIpractice/rest/src/main/resources/features/F02_InvalidInfo.feature:6)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I create a booking with invalid info of "Ahmed", last name "Tarik", total price "200", deposit paid "", check-in "2020-02-02", check-out "2020-01-02", "Burger" successfully.passed
+Then status code should be 404 for all invalid entries......................failed
+]]></system-out>
+</testcase>
+<testcase classname="Booking API with invalid info" name="F02| Try to create a booking with invalid info and retrieve a booking - Example #1.5" time="0.321">
+<failure type="java.lang.AssertionError" message="expected [404] but found [200]">
+<![CDATA[java.lang.AssertionError: expected [404] but found [200]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1418)
+	at org.testng.Assert.assertEquals(Assert.java:1448)
+	at stepDef.D02_invalidInfo.status_code_should_be_for_all_invalid_entries(D02_invalidInfo.java:21)
+	at ?.status code should be 404 for all invalid entries(file:///F:/APIpractice/rest/src/main/resources/features/F02_InvalidInfo.feature:6)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I create a booking with invalid info of "Hisham", last name "Tarik", total price "200-4", deposit paid "true", check-in "2020-02-02", check-out "2020-01-02", "Burger" successfully.passed
+Then status code should be 404 for all invalid entries......................failed
+]]></system-out>
+</testcase>
+<testcase classname="Booking API with invalid info" name="F02| Try to create a booking with invalid info and retrieve a booking - Example #1.6" time="0.323">
+<failure type="java.lang.AssertionError" message="expected [404] but found [200]">
+<![CDATA[java.lang.AssertionError: expected [404] but found [200]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1418)
+	at org.testng.Assert.assertEquals(Assert.java:1448)
+	at stepDef.D02_invalidInfo.status_code_should_be_for_all_invalid_entries(D02_invalidInfo.java:21)
+	at ?.status code should be 404 for all invalid entries(file:///F:/APIpractice/rest/src/main/resources/features/F02_InvalidInfo.feature:6)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I create a booking with invalid info of "Mohammed", last name "Tarik", total price "200", deposit paid "true", check-in "string", check-out "2020-01-02", "Burger" successfully.passed
+Then status code should be 404 for all invalid entries......................failed
+]]></system-out>
+</testcase>
+<testcase classname="Booking API with invalid info" name="F02| Try to create a booking with invalid info and retrieve a booking - Example #1.7" time="0.324">
+<failure type="java.lang.AssertionError" message="expected [404] but found [200]">
+<![CDATA[java.lang.AssertionError: expected [404] but found [200]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1418)
+	at org.testng.Assert.assertEquals(Assert.java:1448)
+	at stepDef.D02_invalidInfo.status_code_should_be_for_all_invalid_entries(D02_invalidInfo.java:21)
+	at ?.status code should be 404 for all invalid entries(file:///F:/APIpractice/rest/src/main/resources/features/F02_InvalidInfo.feature:6)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I create a booking with invalid info of "Samer", last name "Tarik", total price "200", deposit paid "true", check-in "2020-02-02", check-out "string", "Burger" successfully.passed
+Then status code should be 404 for all invalid entries......................failed
+]]></system-out>
+</testcase>
+<testcase classname="Booking API with invalid info" name="F02| Try to create a booking with invalid info and retrieve a booking - Example #1.8" time="0.317">
+<failure type="java.lang.AssertionError" message="expected [404] but found [200]">
+<![CDATA[java.lang.AssertionError: expected [404] but found [200]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1418)
+	at org.testng.Assert.assertEquals(Assert.java:1448)
+	at stepDef.D02_invalidInfo.status_code_should_be_for_all_invalid_entries(D02_invalidInfo.java:21)
+	at ?.status code should be 404 for all invalid entries(file:///F:/APIpractice/rest/src/main/resources/features/F02_InvalidInfo.feature:6)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I create a booking with invalid info of "15", last name "Tarik", total price "200", deposit paid "true", check-in "2020-02-01", check-out "2020-02-02", "Burger" successfully.passed
+Then status code should be 404 for all invalid entries......................failed
+]]></system-out>
+</testcase>
+<testcase classname="Booking API with invalid info" name="F02| Try to create a booking with invalid info and retrieve a booking - Example #1.9" time="0.321">
+<failure type="java.lang.AssertionError" message="expected [404] but found [200]">
+<![CDATA[java.lang.AssertionError: expected [404] but found [200]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1418)
+	at org.testng.Assert.assertEquals(Assert.java:1448)
+	at stepDef.D02_invalidInfo.status_code_should_be_for_all_invalid_entries(D02_invalidInfo.java:21)
+	at ?.status code should be 404 for all invalid entries(file:///F:/APIpractice/rest/src/main/resources/features/F02_InvalidInfo.feature:6)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I create a booking with invalid info of "Samer", last name "15", total price "200", deposit paid "true", check-in "2020-02-01", check-out "2020-02-02", "Burger" successfully.passed
+Then status code should be 404 for all invalid entries......................failed
+]]></system-out>
+</testcase>
+<testcase classname="Retrieve All booking ids" name="F03|  User sends a get request to get all the booking ids" time="0.659">
+<system-out><![CDATA[
+Given user sends a get request to get all id of booking.....................passed
+Then status code should be 200 success......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="generating auth token" name="F04 |  User sends a post request to /auth" time="0.377">
+<system-out><![CDATA[
+Given user sends a post request to get auth with username : "admin" and password: "password123" token.passed
+Then auth token should be returned..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="user can update booking with auth token" name="F05 |  User sends a put request to booking/id - Example #1.1" time="1.231">
+<system-out><![CDATA[
+Given user sends a put request to id : "4211" with firstname: "Mohammed", last name "Tarik", total price "500", deposit paid "true", check-in "2020-01-01", check-out "2020-02-02", additional needs "Dinner".passed
+Then Booking with the given id is updated to match fn "Mohammed" ln "Tarik" "500" "true" "2020-01-01" "2020-02-02" "Dinner".passed
+]]></system-out>
+</testcase>
+<testcase classname="user can delete booking with auth token" name="F06 |  User sends a delete request to booking/id" time="1.313">
+<system-out><![CDATA[
+Given I create  booking with first name "John", last name "Does", total price "200", deposit paid "true", check-in "2020-01-01", check-out "<2020-02-02>", "Breakfast" successfully.passed
+And user enters auth token and sends a delete request to created id.........passed
+Then response to id inquiry should show not found...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="user shouldnt be able to  update booking with invalid auth" name="F07 |  User sends a put request to booking/id with invalid auth token" time="0.333">
+<system-out><![CDATA[
+Given user sends a put request with invalid auth to id : "4211" with firstname: "Mohammed", last name "Tarik", total price "500", deposit paid "true", check-in "2020-01-01", check-out "2020-02-02", additional needs "Dinner".passed
+Then response should fail...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="user shouldnt be able to  update booking with invalid auth" name="F07 |  User sends a delete request to booking/id with invalid auth token" time="0.307">
+<system-out><![CDATA[
+Given user sends a delete request to id 4211................................passed
+Then response should fail...................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

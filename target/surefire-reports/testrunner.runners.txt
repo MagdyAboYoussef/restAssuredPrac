@@ -1,0 +1,103 @@
+-------------------------------------------------------------------------------
+Test set: testrunner.runners
+-------------------------------------------------------------------------------
+Tests run: 17, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 15.451 s <<< FAILURE! - in testrunner.runners
+testrunner.runners.runScenario["F02| Try to create a booking with invalid info and retrieve a booking", "Booking API with invalid info"](3)  Time elapsed: 0.439 s  <<< FAILURE!
+java.lang.AssertionError: expected [404] but found [200]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1418)
+	at org.testng.Assert.assertEquals(Assert.java:1448)
+	at stepDef.D02_invalidInfo.status_code_should_be_for_all_invalid_entries(D02_invalidInfo.java:21)
+	at ✽.status code should be 404 for all invalid entries(file:///F:/APIpractice/rest/src/main/resources/features/F02_InvalidInfo.feature:6)
+
+testrunner.runners.runScenario["F02| Try to create a booking with invalid info and retrieve a booking", "Booking API with invalid info"](4)  Time elapsed: 0.317 s  <<< FAILURE!
+java.lang.AssertionError: expected [404] but found [200]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1418)
+	at org.testng.Assert.assertEquals(Assert.java:1448)
+	at stepDef.D02_invalidInfo.status_code_should_be_for_all_invalid_entries(D02_invalidInfo.java:21)
+	at ✽.status code should be 404 for all invalid entries(file:///F:/APIpractice/rest/src/main/resources/features/F02_InvalidInfo.feature:6)
+
+testrunner.runners.runScenario["F02| Try to create a booking with invalid info and retrieve a booking", "Booking API with invalid info"](5)  Time elapsed: 0.35 s  <<< FAILURE!
+java.lang.AssertionError: expected [404] but found [200]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1418)
+	at org.testng.Assert.assertEquals(Assert.java:1448)
+	at stepDef.D02_invalidInfo.status_code_should_be_for_all_invalid_entries(D02_invalidInfo.java:21)
+	at ✽.status code should be 404 for all invalid entries(file:///F:/APIpractice/rest/src/main/resources/features/F02_InvalidInfo.feature:6)
+
+testrunner.runners.runScenario["F02| Try to create a booking with invalid info and retrieve a booking", "Booking API with invalid info"](6)  Time elapsed: 0.301 s  <<< FAILURE!
+java.lang.AssertionError: expected [404] but found [200]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1418)
+	at org.testng.Assert.assertEquals(Assert.java:1448)
+	at stepDef.D02_invalidInfo.status_code_should_be_for_all_invalid_entries(D02_invalidInfo.java:21)
+	at ✽.status code should be 404 for all invalid entries(file:///F:/APIpractice/rest/src/main/resources/features/F02_InvalidInfo.feature:6)
+
+testrunner.runners.runScenario["F02| Try to create a booking with invalid info and retrieve a booking", "Booking API with invalid info"](7)  Time elapsed: 0.372 s  <<< FAILURE!
+java.lang.AssertionError: expected [404] but found [200]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1418)
+	at org.testng.Assert.assertEquals(Assert.java:1448)
+	at stepDef.D02_invalidInfo.status_code_should_be_for_all_invalid_entries(D02_invalidInfo.java:21)
+	at ✽.status code should be 404 for all invalid entries(file:///F:/APIpractice/rest/src/main/resources/features/F02_InvalidInfo.feature:6)
+
+testrunner.runners.runScenario["F02| Try to create a booking with invalid info and retrieve a booking", "Booking API with invalid info"](8)  Time elapsed: 0.337 s  <<< FAILURE!
+java.lang.AssertionError: expected [404] but found [200]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1418)
+	at org.testng.Assert.assertEquals(Assert.java:1448)
+	at stepDef.D02_invalidInfo.status_code_should_be_for_all_invalid_entries(D02_invalidInfo.java:21)
+	at ✽.status code should be 404 for all invalid entries(file:///F:/APIpractice/rest/src/main/resources/features/F02_InvalidInfo.feature:6)
+
+testrunner.runners.runScenario["F02| Try to create a booking with invalid info and retrieve a booking", "Booking API with invalid info"](9)  Time elapsed: 0.317 s  <<< FAILURE!
+java.lang.AssertionError: expected [404] but found [200]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1418)
+	at org.testng.Assert.assertEquals(Assert.java:1448)
+	at stepDef.D02_invalidInfo.status_code_should_be_for_all_invalid_entries(D02_invalidInfo.java:21)
+	at ✽.status code should be 404 for all invalid entries(file:///F:/APIpractice/rest/src/main/resources/features/F02_InvalidInfo.feature:6)
+
+testrunner.runners.runScenario["F02| Try to create a booking with invalid info and retrieve a booking", "Booking API with invalid info"](10)  Time elapsed: 0.333 s  <<< FAILURE!
+java.lang.AssertionError: expected [404] but found [200]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1418)
+	at org.testng.Assert.assertEquals(Assert.java:1448)
+	at stepDef.D02_invalidInfo.status_code_should_be_for_all_invalid_entries(D02_invalidInfo.java:21)
+	at ✽.status code should be 404 for all invalid entries(file:///F:/APIpractice/rest/src/main/resources/features/F02_InvalidInfo.feature:6)
+
+testrunner.runners.runScenario["F02| Try to create a booking with invalid info and retrieve a booking", "Booking API with invalid info"](11)  Time elapsed: 0.332 s  <<< FAILURE!
+java.lang.AssertionError: expected [404] but found [200]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1418)
+	at org.testng.Assert.assertEquals(Assert.java:1448)
+	at stepDef.D02_invalidInfo.status_code_should_be_for_all_invalid_entries(D02_invalidInfo.java:21)
+	at ✽.status code should be 404 for all invalid entries(file:///F:/APIpractice/rest/src/main/resources/features/F02_InvalidInfo.feature:6)
+

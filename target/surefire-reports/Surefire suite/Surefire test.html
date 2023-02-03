@@ -1,0 +1,291 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>8/9/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Feb 02 00:15:59 EET 2023</td>
+</tr>
+<tr><td>Total time:</td><td>13 seconds (13972 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testrunner.runners.runScenario()'><b>runScenario</b><br>Test class: testrunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "F02| Try to create a booking with invalid info and retrieve a booking", "Booking API with invalid info"</td>
+<td><div><pre>java.lang.AssertionError: expected [404] but found [200]
+	at stepDef.D02_invalidInfo.status_code_should_be_for_all_invalid_entries(D02_invalidInfo.java:21)
+	at ?.status code should be 404 for all invalid entries(file:///F:/APIpractice/rest/src/main/resources/features/F02_InvalidInfo.feature:6)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1847825207", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1847825207'><pre>java.lang.AssertionError: expected [404] but found [200]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1418)
+	at org.testng.Assert.assertEquals(Assert.java:1448)
+	at stepDef.D02_invalidInfo.status_code_should_be_for_all_invalid_entries(D02_invalidInfo.java:21)
+	at ?.status code should be 404 for all invalid entries(file:///F:/APIpractice/rest/src/main/resources/features/F02_InvalidInfo.feature:6)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.runners@cad498c</td></tr>
+<tr>
+<td title='testrunner.runners.runScenario()'><b>runScenario</b><br>Test class: testrunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "F02| Try to create a booking with invalid info and retrieve a booking", "Booking API with invalid info"</td>
+<td><div><pre>java.lang.AssertionError: expected [404] but found [200]
+	at stepDef.D02_invalidInfo.status_code_should_be_for_all_invalid_entries(D02_invalidInfo.java:21)
+	at ?.status code should be 404 for all invalid entries(file:///F:/APIpractice/rest/src/main/resources/features/F02_InvalidInfo.feature:6)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1374688565", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1374688565'><pre>java.lang.AssertionError: expected [404] but found [200]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1418)
+	at org.testng.Assert.assertEquals(Assert.java:1448)
+	at stepDef.D02_invalidInfo.status_code_should_be_for_all_invalid_entries(D02_invalidInfo.java:21)
+	at ?.status code should be 404 for all invalid entries(file:///F:/APIpractice/rest/src/main/resources/features/F02_InvalidInfo.feature:6)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.runners@cad498c</td></tr>
+<tr>
+<td title='testrunner.runners.runScenario()'><b>runScenario</b><br>Test class: testrunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "F02| Try to create a booking with invalid info and retrieve a booking", "Booking API with invalid info"</td>
+<td><div><pre>java.lang.AssertionError: expected [404] but found [200]
+	at stepDef.D02_invalidInfo.status_code_should_be_for_all_invalid_entries(D02_invalidInfo.java:21)
+	at ?.status code should be 404 for all invalid entries(file:///F:/APIpractice/rest/src/main/resources/features/F02_InvalidInfo.feature:6)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1115073856", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1115073856'><pre>java.lang.AssertionError: expected [404] but found [200]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1418)
+	at org.testng.Assert.assertEquals(Assert.java:1448)
+	at stepDef.D02_invalidInfo.status_code_should_be_for_all_invalid_entries(D02_invalidInfo.java:21)
+	at ?.status code should be 404 for all invalid entries(file:///F:/APIpractice/rest/src/main/resources/features/F02_InvalidInfo.feature:6)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.runners@cad498c</td></tr>
+<tr>
+<td title='testrunner.runners.runScenario()'><b>runScenario</b><br>Test class: testrunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "F02| Try to create a booking with invalid info and retrieve a booking", "Booking API with invalid info"</td>
+<td><div><pre>java.lang.AssertionError: expected [404] but found [200]
+	at stepDef.D02_invalidInfo.status_code_should_be_for_all_invalid_entries(D02_invalidInfo.java:21)
+	at ?.status code should be 404 for all invalid entries(file:///F:/APIpractice/rest/src/main/resources/features/F02_InvalidInfo.feature:6)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace483248042", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace483248042'><pre>java.lang.AssertionError: expected [404] but found [200]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1418)
+	at org.testng.Assert.assertEquals(Assert.java:1448)
+	at stepDef.D02_invalidInfo.status_code_should_be_for_all_invalid_entries(D02_invalidInfo.java:21)
+	at ?.status code should be 404 for all invalid entries(file:///F:/APIpractice/rest/src/main/resources/features/F02_InvalidInfo.feature:6)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.runners@cad498c</td></tr>
+<tr>
+<td title='testrunner.runners.runScenario()'><b>runScenario</b><br>Test class: testrunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "F02| Try to create a booking with invalid info and retrieve a booking", "Booking API with invalid info"</td>
+<td><div><pre>java.lang.AssertionError: expected [404] but found [200]
+	at stepDef.D02_invalidInfo.status_code_should_be_for_all_invalid_entries(D02_invalidInfo.java:21)
+	at ?.status code should be 404 for all invalid entries(file:///F:/APIpractice/rest/src/main/resources/features/F02_InvalidInfo.feature:6)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1221559316", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1221559316'><pre>java.lang.AssertionError: expected [404] but found [200]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1418)
+	at org.testng.Assert.assertEquals(Assert.java:1448)
+	at stepDef.D02_invalidInfo.status_code_should_be_for_all_invalid_entries(D02_invalidInfo.java:21)
+	at ?.status code should be 404 for all invalid entries(file:///F:/APIpractice/rest/src/main/resources/features/F02_InvalidInfo.feature:6)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.runners@cad498c</td></tr>
+<tr>
+<td title='testrunner.runners.runScenario()'><b>runScenario</b><br>Test class: testrunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "F02| Try to create a booking with invalid info and retrieve a booking", "Booking API with invalid info"</td>
+<td><div><pre>java.lang.AssertionError: expected [404] but found [200]
+	at stepDef.D02_invalidInfo.status_code_should_be_for_all_invalid_entries(D02_invalidInfo.java:21)
+	at ?.status code should be 404 for all invalid entries(file:///F:/APIpractice/rest/src/main/resources/features/F02_InvalidInfo.feature:6)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1233686868", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1233686868'><pre>java.lang.AssertionError: expected [404] but found [200]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1418)
+	at org.testng.Assert.assertEquals(Assert.java:1448)
+	at stepDef.D02_invalidInfo.status_code_should_be_for_all_invalid_entries(D02_invalidInfo.java:21)
+	at ?.status code should be 404 for all invalid entries(file:///F:/APIpractice/rest/src/main/resources/features/F02_InvalidInfo.feature:6)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.runners@cad498c</td></tr>
+<tr>
+<td title='testrunner.runners.runScenario()'><b>runScenario</b><br>Test class: testrunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "F02| Try to create a booking with invalid info and retrieve a booking", "Booking API with invalid info"</td>
+<td><div><pre>java.lang.AssertionError: expected [404] but found [200]
+	at stepDef.D02_invalidInfo.status_code_should_be_for_all_invalid_entries(D02_invalidInfo.java:21)
+	at ?.status code should be 404 for all invalid entries(file:///F:/APIpractice/rest/src/main/resources/features/F02_InvalidInfo.feature:6)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1111700510", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1111700510'><pre>java.lang.AssertionError: expected [404] but found [200]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1418)
+	at org.testng.Assert.assertEquals(Assert.java:1448)
+	at stepDef.D02_invalidInfo.status_code_should_be_for_all_invalid_entries(D02_invalidInfo.java:21)
+	at ?.status code should be 404 for all invalid entries(file:///F:/APIpractice/rest/src/main/resources/features/F02_InvalidInfo.feature:6)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.runners@cad498c</td></tr>
+<tr>
+<td title='testrunner.runners.runScenario()'><b>runScenario</b><br>Test class: testrunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "F02| Try to create a booking with invalid info and retrieve a booking", "Booking API with invalid info"</td>
+<td><div><pre>java.lang.AssertionError: expected [404] but found [200]
+	at stepDef.D02_invalidInfo.status_code_should_be_for_all_invalid_entries(D02_invalidInfo.java:21)
+	at ?.status code should be 404 for all invalid entries(file:///F:/APIpractice/rest/src/main/resources/features/F02_InvalidInfo.feature:6)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace257546804", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace257546804'><pre>java.lang.AssertionError: expected [404] but found [200]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1418)
+	at org.testng.Assert.assertEquals(Assert.java:1448)
+	at stepDef.D02_invalidInfo.status_code_should_be_for_all_invalid_entries(D02_invalidInfo.java:21)
+	at ?.status code should be 404 for all invalid entries(file:///F:/APIpractice/rest/src/main/resources/features/F02_InvalidInfo.feature:6)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.runners@cad498c</td></tr>
+<tr>
+<td title='testrunner.runners.runScenario()'><b>runScenario</b><br>Test class: testrunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "F02| Try to create a booking with invalid info and retrieve a booking", "Booking API with invalid info"</td>
+<td><div><pre>java.lang.AssertionError: expected [404] but found [200]
+	at stepDef.D02_invalidInfo.status_code_should_be_for_all_invalid_entries(D02_invalidInfo.java:21)
+	at ?.status code should be 404 for all invalid entries(file:///F:/APIpractice/rest/src/main/resources/features/F02_InvalidInfo.feature:6)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1105778967", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1105778967'><pre>java.lang.AssertionError: expected [404] but found [200]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1418)
+	at org.testng.Assert.assertEquals(Assert.java:1448)
+	at stepDef.D02_invalidInfo.status_code_should_be_for_all_invalid_entries(D02_invalidInfo.java:21)
+	at ?.status code should be 404 for all invalid entries(file:///F:/APIpractice/rest/src/main/resources/features/F02_InvalidInfo.feature:6)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.runners@cad498c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testrunner.runners.runScenario()'><b>runScenario</b><br>Test class: testrunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "F05 |  User sends a put request to booking/id", "user can update booking with auth token"</td>
+<td></td>
+<td>1</td>
+<td>testrunner.runners@cad498c</td></tr>
+<tr>
+<td title='testrunner.runners.runScenario()'><b>runScenario</b><br>Test class: testrunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "F07 |  User sends a put request to booking/id with invalid auth token", "user shouldnt be able to  update booking with invalid auth"</td>
+<td></td>
+<td>0</td>
+<td>testrunner.runners@cad498c</td></tr>
+<tr>
+<td title='testrunner.runners.runScenario()'><b>runScenario</b><br>Test class: testrunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "F01 | Create and retrieve a booking", "Booking API"</td>
+<td></td>
+<td>4</td>
+<td>testrunner.runners@cad498c</td></tr>
+<tr>
+<td title='testrunner.runners.runScenario()'><b>runScenario</b><br>Test class: testrunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "F07 |  User sends a delete request to booking/id with invalid auth token", "user shouldnt be able to  update booking with invalid auth"</td>
+<td></td>
+<td>0</td>
+<td>testrunner.runners@cad498c</td></tr>
+<tr>
+<td title='testrunner.runners.runScenario()'><b>runScenario</b><br>Test class: testrunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "F01 | Create and retrieve a booking", "Booking API"</td>
+<td></td>
+<td>0</td>
+<td>testrunner.runners@cad498c</td></tr>
+<tr>
+<td title='testrunner.runners.runScenario()'><b>runScenario</b><br>Test class: testrunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "F04 |  User sends a post request to /auth", "generating auth token"</td>
+<td></td>
+<td>0</td>
+<td>testrunner.runners@cad498c</td></tr>
+<tr>
+<td title='testrunner.runners.runScenario()'><b>runScenario</b><br>Test class: testrunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "F03|  User sends a get request to get all the booking ids", "Retrieve All booking ids"</td>
+<td></td>
+<td>0</td>
+<td>testrunner.runners@cad498c</td></tr>
+<tr>
+<td title='testrunner.runners.runScenario()'><b>runScenario</b><br>Test class: testrunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "F06 |  User sends a delete request to booking/id", "user can delete booking with auth token"</td>
+<td></td>
+<td>1</td>
+<td>testrunner.runners@cad498c</td></tr>
+</table><p>
+</body>
+</html>
