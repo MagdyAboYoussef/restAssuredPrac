@@ -1,4 +1,4 @@
-# restAssuredPrac
+# restAssuredPractice project
 
 This project is written in restAssured non-bdd style by using bdd in cucumber using restful booker api, we send requsts and assert on responses. 
 The test cases are written in cucumber in main/resouces/features.
